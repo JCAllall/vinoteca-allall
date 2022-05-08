@@ -31,7 +31,7 @@
 header {
     font-size: 15px;
     display: flex;
-    background-color: #05063a;
+    background-color: #d8c262;
     justify-content: center;
 }
 
@@ -43,7 +43,7 @@ nav {
 }
 
 #nav-menu {
-    background-color: #05063a;
+    background-color: #d8c262;
     width: auto;
     list-style: none;
     display: flex;
