@@ -138,6 +138,7 @@ nav {
 .div-shop {
     grid-area: shop;
     align-items: center;
+    justify-content: center;
 }
 
 .div-turismo{
