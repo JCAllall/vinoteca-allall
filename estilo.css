@@ -3,13 +3,11 @@
     padding:0;
 }
 
-@media only screen and (max-width:450px) {
-    body{
-        background-color: blue}
-};
+@media screen  (max-width:450px) {};
 
-@media only screen and (min-width:451px) and (max-width:960px) {}
+@media screen (min-width:451px) and (max-width:960px) {}
 
+@media screen (min-width:961px) {}
 
 header {
     font-size: 15px;
@@ -57,13 +55,13 @@ nav {
 
 .presentacion {
     width: auto;
-    height: auto;
+    height: 500px;
     background-image: url(mejores-bodegas-argentinas.jpg);
     background-repeat: no-repeat ;
-    background-size:cover;
-    display: flex;
-    justify-content: center;
-    grid-area: presentacion;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1 fr;
 }
 
 
@@ -100,9 +98,10 @@ nav {
 
 
 .servicios{
+    height: 300px;
     display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: 300px 300px 200px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3 1fr);
     grid-template-areas: "shop turismo regalos";
     background-color: #fff5d9;
     justify-content: space-between;
