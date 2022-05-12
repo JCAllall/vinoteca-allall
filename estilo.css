@@ -3,7 +3,7 @@
     padding:0;
 }
 
-@media screen  (max-width:450px) {};
+@media screen  (max-width:450px);
 
 @media screen (min-width:451px) and (max-width:960px) {}
 
@@ -33,6 +33,11 @@ nav {
     align-items: center;
 }
 
+.container-fluid {
+    width: auto;
+    display: flex;
+}
+
 .nav-li{
     color: #ffffff;
     font-size: 20px;
@@ -45,10 +50,9 @@ nav {
 }
 
 .logorizoma {
-    padding: 0px 30px;
     border-style: hidden;
-    width: 90px;
-    height:90px;
+    width: 95px;
+    height:95px;
     text-align: center;
 }
 
@@ -57,11 +61,11 @@ nav {
     width: auto;
     height: 500px;
     background-image: url(mejores-bodegas-argentinas.jpg);
+    justify-content: center;
+    text-align: center;
     background-repeat: no-repeat ;
     background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 1 fr;
+    display: flex;
 }
 
 
@@ -115,6 +119,27 @@ nav {
     background-color:#fff5d9;
     font-family:'Playfair Display';
     font-size: 30px;
+}
+
+.section-destacados {
+    height: 400px;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+ .h1-destacados {
+     text-transform: uppercase;
+     text-align: end;
+ }
+ 
+
+.imagen-destacados {
+    max-width: 150px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: end;
 }
 
 .logo-footer{
