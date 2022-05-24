@@ -3,7 +3,8 @@
     padding:0;
 }
 
-@media only screen  (max-width:450px);
+@media only screen  (max-width:450px) {
+};
 
 @media only screen (min-width:451px) and (max-width:960px) {};
 
@@ -51,10 +52,10 @@ nav {
 
 .logorizoma {
     border-style: hidden;
-    width: 95px;
-    height:95px;
+    width: auto;
+    height: 90px;
     text-align: center;
-    justify-content: space-around;
+    object-fit:contain;
 }
 
 
@@ -143,21 +144,17 @@ nav {
     justify-content: end;
 }
 
-.logo-footer{
-    padding: 0px 40px;
-    border-style: hidden;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-}
-
-footer {
+footer{
     display: flex;
     font-family: 'Raleway', sans-serif;
     padding: 25px 25px 25px 25px;
     background-color:#fffdcc;
     text-align: center;
-    grid-area: footer;
+}
+
+#logorizoma {
+    border-style: hidden;
+    height: 100px;
 }
 
 .div-seguinos{
