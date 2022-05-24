@@ -3,11 +3,11 @@
     padding:0;
 }
 
-@media screen  (max-width:450px);
+@media only screen  (max-width:450px);
 
-@media screen (min-width:451px) and (max-width:960px) {}
+@media only screen (min-width:451px) and (max-width:960px) {};
 
-@media screen (min-width:961px) {}
+@media only screen (min-width:961px) {};
 
 header {
     font-size: 15px;
@@ -54,6 +54,7 @@ nav {
     width: 95px;
     height:95px;
     text-align: center;
+    justify-content: space-around;
 }
 
 
