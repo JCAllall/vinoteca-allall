@@ -145,14 +145,14 @@ nav {
 }
 
 footer{
+    margin: 25px 25px 25px 25px;
     display: flex;
     font-family: 'Raleway', sans-serif;
     padding: 25px 25px 25px 25px;
     background-color:#fffdcc;
-    text-align: center;
 }
 
-#logorizoma {
+.logo-footer{
     border-style: hidden;
     height: 100px;
 }
@@ -162,9 +162,9 @@ footer{
     align-items:center
 }
 
-h4 {
+h5{
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .p-footer {
