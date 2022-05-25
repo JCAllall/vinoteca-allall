@@ -59,18 +59,14 @@ nav {
 }
 
 
-
 .presentacion {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 600px;
-    background-image: url(background);
+    display: flex;
+    height: 600px;
+    object-fit: fill;
+    text-align: center;
+    justify-content: center;
 }
 
-.img-presentacion {
-    display: flex;
-    object-fit: contain;
-}
 
 
 .somos{
@@ -111,13 +107,13 @@ nav {
     display: block;
     justify-content: center;
     text-align: center;
-    background-color:#fff5d9;
+    background-color:#f5edd9;
     font-family:'Playfair Display';
     font-size: 30px;
 }
 
 .section-destacados {
-    height: 800px;
+    height: 600px;
     padding: 50px;
     justify-items: center;
     display: grid;
@@ -144,7 +140,7 @@ nav {
 
 
 .prefooter {
-        height: 400px;
+        height: 300px;
         display: flex;
         background-color: #ffebc2;
         align-items: center;
