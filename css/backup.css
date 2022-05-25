@@ -58,28 +58,22 @@ nav {
     object-fit:contain;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px;
+}
 
-.presentacion {
-    width: auto;
-    height: 500px;
-    background-image: url(mejores-bodegas-argentinas.jpg);
-    justify-content: center;
-    text-align: center;
-    background-repeat: no-repeat ;
-    background-size: cover;
+.presentacion{
+    object-fit: contain;
+    background-image: url(wallpaperbetter.com_1920x1200 .jpeg);
+}
+
+.img-presentacion {
     display: flex;
     object-fit: contain;
 }
 
-
-.h1-taste {
-    color: #e8d394;
-    padding-top: 90px;
-    padding-bottom: 80px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size:40px;
-}
 
 .somos{
     text-align: center;
