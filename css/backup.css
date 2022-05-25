@@ -58,15 +58,13 @@ nav {
     object-fit:contain;
 }
 
-.grid{
+
+
+.presentacion {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 600px;
-}
-
-.presentacion{
-    object-fit: contain;
-    background-image: url(wallpaperbetter.com_1920x1200 .jpeg);
+    background-image: url(background);
 }
 
 .img-presentacion {
