@@ -61,12 +61,16 @@ nav {
 
 .presentacion {
     display: flex;
-    height: 600px;
-    object-fit: fill;
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
+.fondo-section {
+    width: 800px;
+    height: 500px;
+    background-image: url(presentacion.jpg);
+    background-size: cover;
+}
 
 
 .somos{
@@ -122,7 +126,7 @@ nav {
 }
 
 
- .h1-destacados {
+ .h3-destacados {
      text-transform: uppercase;
      text-align: center;
      font-family: 'Raleway', sans-serif;
