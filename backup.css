@@ -63,13 +63,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(0deg, rgba(56,18,18,0.3533788515406162) 25%, rgba(182,165,135,0.3085609243697479) 50%, rgba(94,179,217,0.27494747899159666) 90%);
 }
 
-.fondo-section {
-    width: 800px;
-    height: 500px;
-    background-image: url(presentacion.jpg);
-    background-size: cover;
+.imagen-presentacion {
+    width: 1400px;
+    height: 700px;
+    padding: 50px 100px 50px 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    border-radius: 20%;
 }
 
 
