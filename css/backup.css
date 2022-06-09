@@ -10,45 +10,7 @@
 
 @media only screen (min-width:961px) {};
 
-header {
-    font-size: 15px;
-    display: flex;
-    background-color: #e6bf54 ;
-    justify-content: center;
-}
 
-nav {
-    height: 105px;
-    text-align: center;
-    width: 85%;
-
-}
-
-#nav-menu {
-    background-color: #e6bf54;
-    width: auto;
-    list-style: none;
-    display: flex;
-    padding-bottom: 10px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container-fluid {
-    width: auto;
-    display: flex;
-}
-
-.nav-li{
-    color: #ffffff;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'Playfair Display', serif;;
-    width: max-content;
-    display: inline-block;
-    text-align: center;
-    padding-left: 80px;
-}
 
 .logorizoma {
     border-style: hidden;
@@ -58,22 +20,12 @@ nav {
     object-fit:contain;
 }
 
-
 .presentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(0deg, rgba(3,0,46,0.9023984593837535) 0%, rgba(0,0,91,0.9) 66%, rgba(0,17,64,0.9) 100%);
-}
-
-.imagen-presentacion {
-    width: 1400px;
-    height: 700px;
-    padding: 50px 100px 50px 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: fill;
-    border-radius: 20%;
+    width: 100%;
+    height: 650px;
+    margin: 10px 10px 10px 10px;
+    background: rgb(3,0,46);
+    background: linear-gradient(0deg, rgba(3,0,46,0.9023984593837535) 0%, rgba(0,0,91,0.9) 66%, rgba(0,17,64,0.9) 100%);
 }
 
 
@@ -150,25 +102,11 @@ nav {
 .prefooter {
         height: 300px;
         display: flex;
-        background-color: #ecd4a3;
+        background-color: #ffebc2;
         align-items: center;
         justify-content: space-around;
         list-style: none;
         font-family: 'Raleway', sans-serif;
-}
-
-
-
-
-
-footer{
-    display: flex;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    padding: 35px 15px 35px 45px;
-    background-color:#080920;
-    text-align: end;
-    justify-content: center;
 }
 
 .logo-footer{
@@ -177,7 +115,20 @@ footer{
 }
 
 
+
+footer{
+    display: flex;
+    color: #fbefcc;
+    font-family: 'Raleway', sans-serif;
+    padding: 35px 15px 35px 45px;
+    background-color:#531111;
+    text-align: end;
+    justify-content: center;
+}
+
+
 h6{
     display: flex;
-    align-items: flex-end;;
+    align-items: flex-end;
+    text-transform: uppercase;
 }
