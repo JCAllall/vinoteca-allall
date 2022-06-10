@@ -3,14 +3,11 @@
     padding:0;
 }
 
-@media only screen  (max-width:450px) {
-};
-
-@media only screen (min-width:451px) and (max-width:960px) {};
-
-@media only screen (min-width:961px) {};
-
-
+.navbar {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
 
 .logorizoma {
     border-style: hidden;
@@ -20,14 +17,34 @@
     object-fit:contain;
 }
 
-.presentacion {
-    width: 100%;
-    height: 650px;
-    margin: 10px 10px 10px 10px;
-    background: rgb(3,0,46);
-    background: linear-gradient(0deg, rgba(3,0,46,0.9023984593837535) 0%, rgba(0,0,91,0.9) 66%, rgba(0,17,64,0.9) 100%);
+.nav-link {
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-family: 'Nuosu SIL', serif;
+    text-transform: uppercase;
+    height: 10px;
 }
 
+.presentacion {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    background: rgb(255, 255, 255);
+}
+
+
+.imagen-presentacion {
+    height: 750px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2%;
+}
 
 .somos{
     text-align: center;
