@@ -8,6 +8,7 @@
 }
 
 .navbar-nav {
+    width: 0 auto;
     justify-content: space-evenly;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .background-nav {
-    background-color: rgb(199, 161, 37);
+    background-color: rgb(243, 208, 93);
     font-weight:500;
 }
 
@@ -57,8 +58,14 @@
     text-shadow: #000000;
 }
 
+
+.section-servicios {
+    position: relative;
+    width: 100%;
+}
+
 .presentacion {
-    width: auto;
+    width: 100%;
     height: 550px;
     display: flex;
     justify-content: center;
@@ -147,10 +154,6 @@ font-family: 'Playfair Display', serif;
 
 
 
-.section-servicios {
-    position: relative;
-}
-
 .h2-destacados {
     display: flex;
 }
@@ -177,23 +180,37 @@ font-family: 'Playfair Display', serif;
     height: 300px;
 }
 
-.container-destacados {
+.container-destacados {    
     display: grid;
     grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.8fr;
-    grid-template-rows: 0.6fr 0.8fr 1.9fr 0.6fr 0.4fr 0.9fr 1.9fr 0.9fr;
+    grid-template-rows: 0.8fr 2.1fr 0.2fr 0.9fr 2.1fr 0.7fr;
     gap: 0px 10px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . .";
+      "vacio vacio titulo1 titulo1 titulo1 titulo1 nada nada"
+      "vacio vacio destacados destacados destacados destacados nada nada"
+      "vacio vacio separacionmedial separacionmedial separacionmedial separacionmedial nada nada"
+      "vacio vacio titulo2 titulo2 titulo2 titulo2 nada nada"
+      "vacio vacio ofertadelmes ofertadelmes ofertadelmes ofertadelmes nada nada"
+      "vacio vacio separacion separacion separacion separacion nada nada";
+  }
   
-}
+  .vacio { grid-area: vacio; }
+  
+  .nada { grid-area: nada; }
+  
+  .titulo1 { grid-area: titulo1; }
+  
+  .titulo2 { grid-area: titulo2; }
+  
+  .destacados { grid-area: destacados; }
+  
+  .ofertadelmes { grid-area: ofertadelmes; }
+  
+  .separacion { grid-area: separacion; }
+  
+  .separacionmedial { grid-area: separacionmedial; }
+  
   
 .grid-item-destacados {
     background-color: #e2aa42;
