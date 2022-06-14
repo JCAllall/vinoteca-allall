@@ -8,7 +8,7 @@
 }
 
 .navbar-nav {
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .logorizoma {
@@ -21,15 +21,14 @@
 
 .nav-link {
     color: #000000;
-    font-family: 'Nuosu SIL', serif;
-    text-transform: uppercase;
-    font-size: large;
-    font-weight:lighter;
-    text-size-adjust: 10px;
+    font-family:'Playfair Display', serif;
+    font-size: larger;
+    justify-content: space-evenly;
 }
 
 .background-nav {
-    background-color: #e2aa42;
+    background-color: rgb(199, 161, 37);
+    font-weight:500;
 }
 
 .card-index {
@@ -76,6 +75,82 @@
     text-align: center;
 }
 
+.imagen-presentacion-servicios {
+    width: 100%;
+    height: 550px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-shop {
+position: absolute;
+top: 86%;
+left: 17%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: rgb(236, 199, 88);
+color: rgb(0, 0, 0);
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 7%;
+font-family: 'Nuosu SIL', serif;
+font-family: 'Playfair Display', serif;
+}
+
+.btn-shop:hover {
+    background-color: rgb(255, 203, 34);
+  }
+
+.btn-turismo {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(236, 199, 88);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7%;
+    font-family: 'Nuosu SIL', serif;
+    font-family: 'Playfair Display', serif;
+    }
+
+.btn-turismo:hover {
+    background-color: rgb(255, 203, 34);
+  }
+
+  .btn-regalos {
+    position: absolute;
+    top: 86%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(236, 199, 88);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7%;
+    font-family: 'Nuosu SIL', serif;
+    font-family: 'Playfair Display', serif;
+    }
+
+.btn-regalos:hover {
+    background-color: rgb(255, 203, 34);
+  }
+
+
+
+.section-servicios {
+    position: relative;
+}
+
 .h2-destacados {
     display: flex;
 }
@@ -102,16 +177,26 @@
     height: 300px;
 }
 
-
-.servicios{
-    height: 300px;
+.container-destacados {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 25px;
-    background-color: #f5edd9;
-    justify-content: space-between;
-    align-items:center;
+    grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.8fr;
+    grid-template-rows: 0.6fr 0.8fr 1.9fr 0.6fr 0.4fr 0.9fr 1.9fr 0.9fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . .";
+  
+}
+  
+.grid-item-destacados {
+    background-color: #e2aa42;
 }
 
 .h2-main {
