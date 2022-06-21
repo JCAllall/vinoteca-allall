@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body header .navbar {
+  display: flex;
+}
+body header .navbar .background-nav {
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+body header .navbar .background-nav .navbar-brand .logorizoma {
+  border-style: hidden;
+  width: auto;
+  height: 90px;
+  text-align: center;
+  object-fit: contain;
+}
+body header .navbar .background-nav .navbar-brand .logorizoma .navbar-nav {
+  width: 0 auto;
+  justify-content: space-evenly;
+}
+body header .navbar .background-nav .navbar-brand .logorizoma .navbar-nav .nav-link {
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: larger;
+  justify-content: space-evenly;
+}

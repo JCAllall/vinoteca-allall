@@ -1,0 +1,33 @@
+body {
+    margin:0;
+    padding:0;
+    header {
+        .navbar{
+            display: flex;
+            .background-nav {
+                background-color: rgb(255, 255, 255);
+                font-weight:500;
+                .navbar-brand {
+                    .logorizoma {
+                        border-style: hidden;
+                        width: auto;
+                        height: 90px;
+                        text-align: center;
+                        object-fit:contain;
+                        .navbar-nav {
+                            width: 0 auto;
+                            justify-content: space-evenly;
+                            .nav-link {
+                                color: #000000;
+                                font-family:'Playfair Display', serif;
+                                font-size: larger;
+                                justify-content: space-evenly;
+                                
+                            }                
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
