@@ -32,37 +32,6 @@
     font-weight:500;
 }
 
-.card-index {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-index {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
-.owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-}
-
-
-.card-index-turismo {
-    background-color: #e2aa42;
-    text-transform: uppercase;
-    text-shadow: #000000;
-}
-
-
-.section-servicios {
-    position: relative;
-    width: 100%;
-}
 
 .presentacion {
     width: 100%;
@@ -73,13 +42,18 @@
     background: rgb(255, 255, 255);
 }
 
-
 .imagen-presentacion {
     height: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+
+.section-servicios {
+    position: relative;
+    width: 100%;
 }
 
 .imagen-presentacion-servicios {
