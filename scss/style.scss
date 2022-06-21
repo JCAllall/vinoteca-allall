@@ -1,11 +1,9 @@
 body {
-    margin:0;
-    padding:0;
     header {
         .navbar{
             display: flex;
             .background-nav {
-                background-color: rgb(255, 255, 255);
+                background-color: rgb(177, 89, 89);
                 font-weight:500;
                 .navbar-brand {
                     .logorizoma {
@@ -46,6 +44,8 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
+        background-size: contain;
+        object-fit: contain;
     }
 }
 
@@ -111,4 +111,45 @@ body {
               }
         }
     }
+
+
+    .destacados {  
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.8fr;
+        grid-template-rows: 0.8fr 2.1fr 0.2fr 0.9fr 2.1fr 0.7fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . titulo1 titulo1 titulo1 titulo1 . ."
+          ". . destacados destacados destacados destacados . ."
+          ". . separacionmedial separacionmedial separacionmedial separacionmedial . ."
+          ". . titulo2 titulo2 titulo2 titulo2 . ."
+          ". . ofertadelmes ofertadelmes ofertadelmes ofertadelmes . ."
+          ". . separacion separacion separacion separacion . .";
+      }
+      
+      .destacados { grid-area: destacados; }
+      
+      .ofertadelmes { grid-area: ofertadelmes; }
+      
+      .separacion { grid-area: separacion; }
+      
+      .separacionmedial { grid-area: separacionmedial; }
+      
+      .titulo1 { grid-area: titulo1; }
+      
+      .titulo2 { grid-area: titulo2; }
+
+      @media screen and (max-width: 1920px) {
+        .imagen-presentacion{
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 550px;
+        }
+    }
+      
+
+
 
