@@ -28,10 +28,9 @@
 }
 
 .background-nav {
-    background-color: rgb(243, 208, 93);
+    background-color: rgb(216, 205, 205);
     font-weight:500;
 }
-
 
 .presentacion {
     width: 100%;
@@ -127,27 +126,6 @@ font-family: 'Playfair Display', serif;
   }
 
 
-
-
-  
-
-.h2-destacados {
-    display: flex;
-}
-
-.somos{
-    text-align: center;
-    margin: auto;
-    width: 55%;
-    padding-bottom: 150px;
-    color: #000000;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-    display: block;
-    align-content: center;
-    padding-bottom: 8cm;
-}
-
 .caja {
     background-color: #fbefcc;
     font-family: 'Playfair Display', serif;
@@ -157,10 +135,11 @@ font-family: 'Playfair Display', serif;
     height: 300px;
 }
 
-.container-destacados {    
+.especiales {  
     display: grid;
     grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.8fr;
     grid-template-rows: 0.8fr 2.1fr 0.2fr 0.9fr 2.1fr 0.7fr;
+    grid-auto-rows: 1fr;
     gap: 0px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -172,14 +151,6 @@ font-family: 'Playfair Display', serif;
       "vacio vacio separacion separacion separacion separacion nada nada";
   }
   
-  .vacio { grid-area: vacio; }
-  
-  .nada { grid-area: nada; }
-  
-  .titulo1 { grid-area: titulo1; }
-  
-  .titulo2 { grid-area: titulo2; }
-  
   .destacados { grid-area: destacados; }
   
   .ofertadelmes { grid-area: ofertadelmes; }
@@ -188,26 +159,17 @@ font-family: 'Playfair Display', serif;
   
   .separacionmedial { grid-area: separacionmedial; }
   
+  .titulo2 { grid-area: titulo2; }
   
-.grid-item-destacados {
-    background-color: #e2aa42;
-}
+  .nada { grid-area: nada; }
+  
+  .vacio { grid-area: vacio; }
+  
+  .titulo1 { grid-area: titulo1; }
+  
+  
+  
 
-.h2-main {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    background-color:#f5edd9;
-    font-family:'Playfair Display';
-    font-size: 30px;
-}
-
- .h3-destacados {
-     text-transform: uppercase;
-     text-align: center;
-     font-family: 'Raleway', sans-serif;
- }
- 
  
 
 .imagen-destacados {

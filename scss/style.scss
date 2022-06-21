@@ -3,11 +3,10 @@ body {
         .navbar{
             display: flex;
             .background-nav {
-                background-color: rgb(177, 89, 89);
+                background-color: rgb(243, 208, 93);
                 font-weight:500;
                 .navbar-brand {
                     .logorizoma {
-                        border-style: hidden;
                         width: auto;
                         height: 90px;
                         text-align: center;
@@ -112,7 +111,64 @@ body {
         }
     }
 
+    .especiales {  display: grid;
+        grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.8fr;
+        grid-template-rows: 0.8fr 2.1fr 0.2fr 0.9fr 2.1fr 0.7fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "vacio vacio titulo1 titulo1 titulo1 titulo1 nada nada"
+          "vacio vacio destacados destacados destacados destacados nada nada"
+          "vacio vacio separacionmedial separacionmedial separacionmedial separacionmedial nada nada"
+          "vacio vacio titulo2 titulo2 titulo2 titulo2 nada nada"
+          "vacio vacio ofertadelmes ofertadelmes ofertadelmes ofertadelmes nada nada"
+          "vacio vacio separacion separacion separacion separacion nada nada";
+      }
+      
+      .destacados { grid-area: destacados; }
+      
+      .ofertadelmes { grid-area: ofertadelmes; }
+      
+      .separacion { grid-area: separacion; }
+      
+      .separacionmedial { grid-area: separacionmedial; }
+      
+      .titulo2 { grid-area: titulo2; }
+      
+      .nada { grid-area: nada; }
+      
+      .vacio { grid-area: vacio; }
+      
+      .titulo1 { grid-area: titulo1; }
+      
+
+    .prefooter {
+        height: 300px;
+        display: flex;
+        background-color: #f1ddbf;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        font-family: 'Raleway', sans-serif;
+        .logo-footer{
+            border-style: hidden;
+            height: 150px;
+        }
+}
 
 
-
-
+footer{
+    display: flex;
+    color: #fbefcc;
+    font-family: 'Raleway', sans-serif;
+    padding: 35px 15px 35px 45px;
+    background-color:#e0a536;
+    text-align: end;
+    justify-content: center;
+    h6{
+        display: flex;
+        align-items: flex-end;
+        text-transform: uppercase;
+    }
+}
