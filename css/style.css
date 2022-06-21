@@ -12,11 +12,11 @@ body header .navbar .background-nav .navbar-brand .logorizoma {
   text-align: center;
   object-fit: contain;
 }
-body header .navbar .background-nav .navbar-brand .logorizoma .navbar-nav {
+body header .navbar .background-nav .navbar-brand .navbar-nav {
   width: 0 auto;
   justify-content: space-evenly;
 }
-body header .navbar .background-nav .navbar-brand .logorizoma .navbar-nav .nav-link {
+body header .navbar .background-nav .navbar-brand .navbar-nav .nav-link {
   color: #000000;
   font-family: "Playfair Display", serif;
   font-size: larger;
