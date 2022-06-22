@@ -173,24 +173,19 @@ font-size: 18px;
     grid-area: destacados;
     grid-column: 3 / 7;
     grid-row: 2 / 3;
-    align-items: center;
-    justify-content: center;
     height: 500px;
 }
 
-.card-group { 
-    border: solid 2px dark;
-    justify-content: space-between;
-  }
-  
 .card {
     height: 470px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card-body {
     height: 50px;
+    box-shadow: #000000 5%;
   }
   
 .producto-especiales {
@@ -210,9 +205,9 @@ font-size: 18px;
 }
 
 .btn-productos{ 
-    justify-content: flex-end;
-    align-items: center;
-    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 23%;
     border-radius: 0%;
     background-color: #e0a536;
 }
@@ -325,3 +320,10 @@ h6{
     text-transform: uppercase;
 }
 
+
+
+
+.pages {
+    justify-content: center;
+    padding-bottom: 15px ;
+}
