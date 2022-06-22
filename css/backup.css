@@ -77,6 +77,8 @@ cursor: pointer;
 border-radius: 7%;
 font-family: 'Nuosu SIL', serif;
 font-family: 'Playfair Display', serif;
+font-weight: 600;
+font-size: 18px;
 }
 
 .btn-shop:hover {
@@ -98,6 +100,8 @@ font-family: 'Playfair Display', serif;
     border-radius: 7%;
     font-family: 'Nuosu SIL', serif;
     font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
     }
 
 .btn-turismo:hover {
@@ -112,13 +116,14 @@ font-family: 'Playfair Display', serif;
     -ms-transform: translate(-50%, -50%);
     background-color: rgb(236, 199, 88);
     color: rgb(0, 0, 0);
-    font-size: 16px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 7%;
     font-family: 'Nuosu SIL', serif;
     font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
     }
 
 .btn-regalos:hover {
@@ -192,20 +197,24 @@ font-family: 'Playfair Display', serif;
     height: 250px;
     width: 150px;
     margin: 25px;
+    object-fit: cover;
 }
 
 
 .titulo-producto{ 
+    font-family: 'Lora', serif;
     font-family: 'Nuosu SIL', serif;
     font-family: 'Playfair Display', serif;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .btn-productos{ 
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin: 30px;
+    display: inline-block;
+    border-radius: 0%;
+    background-color: #e0a536;
 }
 
 .ofertadelmes {
