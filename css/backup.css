@@ -3,14 +3,13 @@
     padding:0;
 }
 
-    
 
 .navbar {
     display: flex;
+    width: 100%;
 }
 
 .navbar-nav {
-    width: 0 auto;
     justify-content: space-evenly;
 }
 
@@ -169,6 +168,7 @@ font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .destacados { 
@@ -182,6 +182,7 @@ font-size: 18px;
     height: 470px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -272,12 +273,7 @@ font-size: 18px;
     grid-row: 1 / 7;
 }
   
-  
-  
-  
-  
 
- 
 
 .imagen-destacados {
     height: 85px;
@@ -304,7 +300,6 @@ font-size: 18px;
 }
 
 
-
 footer{
     display: flex;
     color: #fbefcc;
@@ -325,15 +320,360 @@ h6{
 
 
 
-.pages {
-    justify-content: center;
-    padding-bottom: 15px ;
-}
 
-
-@media screen and (max-width:1310px)
-{
+@media screen and (max-width:1360px) {
     .presentacion {
         display: none;
     }
 }
+
+
+
+@media screen and (max-width:1160px) {
+    .imagen-presentacion-servicios {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:1160px) {
+    .shop-mobile {
+        display: none;
+    }
+    .turismo-mobile {
+        display: none;
+    }
+    .regalos-mobile {
+        display: none;
+    }
+ }
+
+/*             1161PX              ----------------------------                   1359PX      */
+
+@media screen and (min-width:1161px) and (max-width:1360px) {
+    .imagen-presentacion-servicios {
+        height: 450px;
+    }
+}
+
+/*             1000PX              ----------------------------                   1160PX      */
+
+
+@media screen and (min-width:1000px) and (max-width:1160px) {
+    .shop-mobile {
+        width: 100%;
+        height: 900px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-shop-mobile {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .turismo-mobile {
+        width: 100%;
+        height: 900px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-turismo-mobile {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .regalos-mobile {
+        width: 100%;
+        height: 800px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-regalos-mobile{
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/*            701PX                ----------------------------                    1000PX      */
+
+
+@media screen and (min-width:701px) and (max-width:1000px){
+    .shop-mobile {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-shop-mobile {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .turismo-mobile {
+        width: 100%;
+        height: 800px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-turismo-mobile {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .regalos-mobile {
+        width: 100%;
+        height: 800px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-regalos-mobile{
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+/*             500PX              ----------------------------                   699PX      */
+
+
+@media screen and (min-width:500px) and (max-width:699px) {
+    .shop-mobile {
+        width: 100%;
+        height:600px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-shop-mobile {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .turismo-mobile {
+        width: 100%;
+        height: 600px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-turismo-mobile {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .regalos-mobile {
+        width: 100%;
+        height: 600px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-regalos-mobile{
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/*             0PX              ----------------------------                   500PX      */
+
+
+@media screen and (max-width:500px) {
+    .shop-mobile {
+        width: 100%;
+        height:400px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-shop-mobile {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .turismo-mobile {
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-turismo-mobile {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .regalos-mobile {
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-regalos-mobile{
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(236, 199, 88);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 7%;
+        font-family: 'Nuosu SIL', serif;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
