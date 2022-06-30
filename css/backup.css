@@ -205,7 +205,7 @@ font-size: 18px;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 80%;
+    width: 60%;
     height: 450px;
 }
 
@@ -239,6 +239,7 @@ font-size: 18px;
     left: 38%;
     border-radius: 0%;
     background-color: #e0a536;
+    height: 30px;
 }
 
 
@@ -318,10 +319,33 @@ font-size: 18px;
 
 /*  _________ CLUB ___________*/
 
-h1 {}
+h1 {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+    font-size: 50px;
+}
 
+.h2-regalos { 
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px;
+    font-size: 50px;
+    text-decoration: underline;
+}
 
-
+.p-regalos {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px;
+    font-size: 25px;
+}
 
 
 
@@ -744,6 +768,48 @@ h6{
         display: none;
     }
 }
+
+
+/*    DESTACADOS INDEX HASTA 980PX  _______________________*/
+
+
+@media screen and (max-width:980px) {
+    .card-oferta {
+        width: 70%;
+    }
+    .btn-productos {
+        height: 35px;
+        line-height: 15px;
+        width: 60%;
+        font-size: 14px;
+    }
+    .titulo-producto {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
