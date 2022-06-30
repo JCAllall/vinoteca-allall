@@ -3,6 +3,13 @@
     padding:0;
 }
 
+/*  __________________________________ NAV _______________________________________________*/
+
+
+
+
+
+
 
 .navbar {
     display: flex;
@@ -32,6 +39,14 @@
     background-color: rgb(216, 205, 205);
     font-weight:500;
 }
+
+
+
+
+
+
+/*    ___________________________        PRESENTACION __________________________________*/ 
+
 
 .presentacion {
     width: 100%;
@@ -186,6 +201,14 @@ font-size: 18px;
     
 }
 
+.card-oferta {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 450px;
+}
+
 .card-body {
     height: 50px;
     box-shadow: #000000 5%;
@@ -208,12 +231,16 @@ font-size: 18px;
 }
 
 .btn-productos{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 5%;
-    left: 23%;
+    left: 38%;
     border-radius: 0%;
     background-color: #e0a536;
 }
+
 
 .ofertadelmes {
     grid-area: ofertadelmes;
@@ -273,7 +300,12 @@ font-size: 18px;
     grid-row: 1 / 7;
 }
   
-
+.insta {
+    height: 25px;
+}
+.face {
+    height: 25px;
+}
 
 .imagen-destacados {
     height: 85px;
@@ -284,14 +316,23 @@ font-size: 18px;
 }
 
 
+/*  _________ CLUB ___________*/
+
+h1 {}
+
+
+
+
+
+
 .prefooter {
-        height: 300px;
         display: flex;
         background-color: #f1ddbf;
         align-items: center;
         justify-content: space-around;
         list-style: none;
         font-family: 'Raleway', sans-serif;
+        height: 300px;
 }
 
 .logo-footer{
@@ -309,7 +350,6 @@ footer{
     text-align: end;
     justify-content: center;
 }
-
 
 h6{
     display: flex;
@@ -677,3 +717,51 @@ h6{
     }
 }
 
+@media screen and (max-width:1399px) {
+    .btn-productos {
+        display: none;
+    }
+    .btn-productos-responsive {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 5%;
+        left: 23%;
+        border-radius: 0%;
+        background-color: #e0a536;
+        height:max-content;
+        font-size: 15px;
+    }
+    .card.img.top {
+        box-shadow: #000000 2%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .btn-responsive {
+        display: none;
+    }
+}
+
+
+
+/*                              _______________________________________________________________________           FOOTER                ______________________________________________________________________________*/
+
+
+
+
+@media screen and (max-width:800px) {
+    .prefooter {
+        height: 400px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-footer-responsive {
+        height: 90px;
+    }
+}
