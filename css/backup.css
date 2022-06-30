@@ -183,7 +183,6 @@ font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .destacados { 
@@ -197,7 +196,6 @@ font-size: 18px;
     height: 470px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     
 }
 
@@ -325,7 +323,88 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 90px;
+    font-size: 70px;
+}
+.h2-index {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
     font-size: 50px;
+}
+
+.h2-club {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 35px;
+    font-size: 45px;
+    font-style: italic;
+    color: #e0a536;
+}
+
+.beneficios-club {
+    list-style: none;
+    font-size: 26px;
+    font-family: 'Crimson Text', serif;
+    border-radius: 4%;
+    padding: 20px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.h3-club {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+    font-size: 30px;
+    font-style: italic;
+    color: #e0a536;
+}
+
+.h3-asociarme {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+    font-size: 30px;
+    font-style: italic;
+    color: #020238;
+}
+
+.h3-categorias{
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+    font-size: 30px;
+    color: #e0a536;
+}
+
+.beneficios-club-categorias {
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    border: #f1ddbf solid 4px;
+    border-radius: 8%;
+    padding: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.p-club {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .h2-regalos { 
@@ -347,16 +426,28 @@ h1 {
     font-size: 25px;
 }
 
+hr {
+    color: #e0a536;
+}
+
+/*       ___________________________________                             REGALOS                       ____________________________________________________________________________________________________*/
+
+
+
+/*                  ___________________________________________________   FOOTER ___________________________________________*/
+
+
+
 
 
 .prefooter {
-        display: flex;
-        background-color: #f1ddbf;
-        align-items: center;
-        justify-content: space-around;
-        list-style: none;
-        font-family: 'Raleway', sans-serif;
-        height: 300px;
+    display: flex;
+    background-color: #f1ddbf;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    height: 300px;
 }
 
 .logo-footer{
