@@ -24,18 +24,18 @@ function cargarEventListeners() {
 
 
 // Funciones
-// Función que añade el curso al carrito
+// Función que añade el producto al carrito
 function agregarCurso(e) {
      e.preventDefault();
      // Delegation para agregar-carrito
      if(e.target.classList.contains('agregar-carrito')) {
           const curso = e.target.parentElement.parentElement;
-          // Enviamos el curso seleccionado para tomar sus datos
+          // Enviamos el producto seleccionado para tomar sus datos
           leerDatosCurso(curso);
      }
 }
 
-// Lee los datos del curso
+// Lee los datos del prodcuto
 function leerDatosCurso(curso) {
      const infoCurso = {
           imagen: curso.querySelector('img').src,
@@ -68,7 +68,7 @@ function leerDatosCurso(curso) {
      carritoHTML();
 }
 
-// Elimina el curso del carrito en el DOM
+// Elimina el producto del carrito en el DOM
 function eliminarCurso(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
@@ -83,7 +83,7 @@ function eliminarCurso(e) {
 }
 
 
-// Muestra el curso seleccionado en el Carrito
+// Muestra el producto seleccionado en el Carrito
 function carritoHTML() {
 
      vaciarCarrito();
@@ -106,7 +106,7 @@ function carritoHTML() {
 
 }
 
-// Elimina los cursos del carrito en el DOM
+// Elimina los productos del carrito en el DOM
 function vaciarCarrito() {
      // forma lenta
      // contenedorCarrito.innerHTML = '';
