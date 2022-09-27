@@ -9,18 +9,13 @@
 .navbar {
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
-.navbar-nav {
-    justify-content: space-evenly;
-}
 
 .logorizoma {
-    border-style: hidden;
-    width: auto;
-    height: 90px;
-    text-align: center;
-    object-fit:contain;
+  border-style: hidden;
+  height: 90px;
 }
 
 .nav-link {
@@ -306,9 +301,6 @@ h1 {
     font-size: 25px;
 }
 
-hr {
-    color: #e0a536;
-}
 
 /*       ___________________________________                             REGALOS                       ____________________________________________________________________________________________________*/
 
@@ -1564,3 +1556,12 @@ ul {
   
   @media (min-width: 1200px) {}
   
+hr {
+  display: flex;
+  border: none;
+  height: 5px;
+  background: rgb(224, 211, 27);
+  margin-bottom: 30px;
+  align-items: center;
+  width: 75%;
+}

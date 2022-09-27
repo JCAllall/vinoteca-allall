@@ -6,6 +6,7 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 let articulosCarrito = [];
 
 // Listeners
+
 cargarEventListeners();
 
 function cargarEventListeners() {
@@ -19,9 +20,6 @@ function cargarEventListeners() {
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 }
-
-
-
 
 // Funciones
 // Función que añade el producto al carrito
@@ -116,4 +114,9 @@ function vaciarCarrito() {
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
       }
+}
+
+const vinos = {
+     nombre: "Idilica",
+     varietal: malbec
 }

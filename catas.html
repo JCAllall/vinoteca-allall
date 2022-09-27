@@ -42,23 +42,19 @@
 
 </head>
 <body>
-        <header>
-
+        <header id="header" class="header">
                 <nav class="navbar navbar-expand-lg background-nav">
                         <div class="container-fluid">
-                                <a class="navbar-brand" href="index.html"><img src="Imagenes/RIZOMA.png" alt="Logo"
-                                                class="logorizoma"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
+                                
+                                <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                                        <a class="navbar-brand" href="index.html"><img src="Imagenes/RIZOMA.png" alt="Logo" class="logorizoma"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse justify-content-evenly"
-                                        id="navbarSupportedContent">
                                         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 300px;" >
                                                 <li class="nav-item">
                                                         <a class="nav-link active" aria-current="page"
-                                                                href="club.html">RIZOMA CLUB</a>
+                                                                href="rizomaclub.html">RIZOMA CLUB</a>
                                                 </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link active" aria-current="page"
@@ -109,25 +105,37 @@
                                                                         <hr class="dropdown-divider">
                                                                 </li>
                                                                 <li><a class="dropdown-item"
-                                                                                href="consultas.html">Envianos tu
-                                                                                consulta</a></li>
+                                                                                href="consultas.html">Envianos tu consulta</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link active" aria-current="page"
                                                                 href="contacto.html">CONTACTO</a>
                                                 </li>
+                                                <li class="submenu">
+                                                        <img src="Imagenes/cart.png" id="img-carrito">
+                                                        <div id="carrito">
+                                                                
+                                                                <table id="lista-carrito" class="u-full-width">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Imagen</th>
+                                                                            <th>Nombre</th>
+                                                                            <th>Precio</th>
+                                                                            <th>Cantidad</th>
+                                                                            <th></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody></tbody>
+                                                                </table>
+                            
+                                                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                                        </div>
+                                                </li>
                                         </ul>
-                                        <form class="d-flex" role="search">
-                                                <input class="form-control me-2 bg-light" type="search"
-                                                        placeholder="Search" aria-label="Buscar">
-                                                <button class="btn btn-outline-dark boton-buscar"
-                                                        type="submit">Buscar</button>
-                                        </form>
                                 </div>
                         </div>
                 </nav>
-
         </header>
 
 
