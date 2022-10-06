@@ -11,10 +11,10 @@ cargarEventListeners();
 
 function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
-     listaProductos.addEventListener('click', agregarCurso);
+     listaProductos.addEventListener('click', agregarProducto);
 
      // Cuando se elimina un producto del carrito
-     carrito.addEventListener('click', eliminarCurso);
+     carrito.addEventListener('click', eliminarProducto);
 
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
@@ -23,7 +23,7 @@ function cargarEventListeners() {
 
 // Funciones
 // Función que añade el producto al carrito
-function agregarCurso(e) {
+function agregarProducto(e) {
      e.preventDefault();
      // Delegation para agregar-carrito
      if(e.target.classList.contains('agregar-carrito')) {
@@ -35,7 +35,7 @@ function agregarCurso(e) {
 
 // Lee los datos del prodcuto
 function leerDatosCurso(curso) {
-     const infoCurso = {
+     const infoProducto = {
           imagen: curso.querySelector('img').src,
           titulo: curso.querySelector('h4').textContent,
           precio: curso.querySelector('.precio span').textContent,
@@ -44,9 +44,9 @@ function leerDatosCurso(curso) {
      }
 
 
-     if( articulosCarrito.some( curso => curso.id === infoCurso.id ) ) { 
+     if( articulosCarrito.some( curso => curso.id === infoProducto.id ) ) { 
           const cursos = articulosCarrito.map( curso => {
-               if( curso.id === infoCurso.id ) {
+               if( curso.id === infoProducto.id ) {
                     curso.cantidad++;
                      return curso;
                 } else {
@@ -55,7 +55,7 @@ function leerDatosCurso(curso) {
           })
           articulosCarrito = [...cursos];
      }  else {
-          articulosCarrito = [...articulosCarrito, infoCurso];
+          articulosCarrito = [...articulosCarrito, infoProducto];
      }
 
      // console.log(articulosCarrito)
@@ -67,7 +67,7 @@ function leerDatosCurso(curso) {
 }
 
 // Elimina el producto del carrito en el DOM
-function eliminarCurso(e) {
+function eliminarProducto(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
@@ -86,17 +86,17 @@ function carritoHTML() {
 
      vaciarCarrito();
 
-     articulosCarrito.forEach(curso => {
+     articulosCarrito.forEach(producto => {
           const row = document.createElement('tr');
           row.innerHTML = `
                <td>  
-                    <img src="${curso.imagen}" width=100>
+                    <img src="${producto.imagen}" width=100>
                </td>
-               <td>${curso.titulo}</td>
-               <td>${curso.precio}</td>
-               <td>${curso.cantidad} </td>
+               <td>${producto.titulo}</td>
+               <td>${producto.precio}</td>
+               <td>${producto.cantidad} </td>
                <td>
-                    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+                    <a href="#" class="borrar-curso" data-id="${producto.id}">X</a>
                </td>
           `;
           contenedorCarrito.appendChild(row);
